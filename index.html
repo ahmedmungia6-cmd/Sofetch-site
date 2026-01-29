@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFTECH - L'innovation à votre service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-laptop-code"></i>
+                    <h1>SOF<span>TECH</span></h1>
+                </div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#fidelite">Fidélité</a></li>
+                        <li><a href="#commander" class="btn">Commander</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="container">
+            <h2>L'innovation à votre service</h2>
+            <p>SOFTECH est votre partenaire de confiance pour des solutions numériques, technologiques et éducatives modernes, fiables et accessibles.</p>
+            <a href="#commander" class="btn">Demander un service</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Services</h2>
+                <p>Découvrez notre gamme complète de services conçus pour répondre à tous vos besoins numériques et technologiques.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Design & Communication visuelle</h3>
+                    <p>Création de logos, affiches, flyers, invitations, portraits numériques et impression de haute qualité.</p>
+                    <p class="service-tag">Nous donnons une image forte à vos idées.</p>
+                    <button class="btn select-service" data-service="design">Sélectionner ce service</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Informatique & Technologies</h3>
+                    <p>Installation de systèmes, maintenance, déblocage Android, développement de logiciels sur mesure.</p>
+                    <p class="service-tag">Votre performance commence par des outils fiables.</p>
+                    <button class="btn select-service" data-service="informatique">Sélectionner ce service</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web & Numérique</h3>
+                    <p>Création de sites web, référencement, hébergement et applications modernes.</p>
+                    <p class="service-tag">Votre entreprise, visible partout et à tout moment.</p>
+                    <button class="btn select-service" data-service="web">Sélectionner ce service</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Audiovisuel & Événementiel</h3>
+                    <p>Live streaming, location de projecteurs, captation et montage vidéo.</p>
+                    <p class="service-tag">Faites briller vos événements et partagez-les avec le monde.</p>
+                    <button class="btn select-service" data-service="audiovisuel">Sélectionner ce service</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Formation & Accompagnement</h3>
+                    <p>Formations en informatique, design, web et maintenance, avec accompagnement personnalisé.</p>
+                    <p class="service-tag">Nous formons les talents de demain.</p>
+                    <button class="btn select-service" data-service="formation">Sélectionner ce service</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="apropos">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Notre Vision</h2>
+                    <p>Devenir une référence dans les solutions numériques, technologiques et éducatives en Afrique, en offrant des services modernes, fiables et accessibles à tous.</p>
+                    <p>Nous plaçons l'innovation, la qualité et la satisfaction du client au cœur de tout ce que nous faisons.</p>
+                    <p>Notre équipe d'experts passionnés travaille sans relâche pour vous offrir des solutions sur mesure qui répondent parfaitement à vos besoins.</p>
+                    <a href="#commander" class="btn">Travaillons ensemble</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Équipe SOFTECH">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loyalty Section -->
+    <section class="loyalty" id="fidelite">
+        <div class="container">
+            <div class="loyalty-content">
+                <h2>Programme de Fidélité</h2>
+                <p>Nous valorisons votre fidélité. Chaque service commandé vous rapporte 1 point que vous pouvez échanger contre des réductions sur vos futures commandes.</p>
+
+                <table class="loyalty-table">
+                    <thead>
+                        <tr>
+                            <th>Points accumulés</th>
+                            <th>Réduction applicable</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20 points</td>
+                            <td>5 points de réduction</td>
+                        </tr>
+                        <tr>
+                            <td>50 points</td>
+                            <td>10 points de réduction</td>
+                        </tr>
+                        <tr>
+                            <td>80 points</td>
+                            <td>15 points de réduction</td>
+                        </tr>
+                        <tr>
+                            <td>100 points</td>
+                            <td>20 points de réduction</td>
+                        </tr>
+                        <tr>
+                            <td>Plus de 150 points</td>
+                            <td>30 points de réduction</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>Rappel :</strong> Chaque demande de service vous rapporte 1 point.</p>
+                <a href="#commander" class="btn">Vérifier mes points</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order" id="commander">
+        <div class="container">
+            <div class="section-title">
+                <h2>Commander un Service</h2>
+                <p>Remplissez le formulaire ci-dessous pour solliciter nos services à distance.</p>
+            </div>
+
+            <div class="order-container">
+                <div class="order-form">
+                    <h3>Formulaire de Commande</h3>
+                    <form id="service-order-form">
+                        <div class="form-group">
+                            <label for="fullname">Nom complet</label>
+                            <input type="text" id="fullname" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Services demandés</label>
+                            <div id="services-selection">
+                                <div class="service-selection">
+                                    <input type="checkbox" id="service-design" value="design">
+                                    <label for="service-design">Design & Communication visuelle</label>
+                                    <input type="number" id="budget-design-usd" placeholder="Montant USD" min="0" step="10" style="margin-left: 10px; width: 100px;">
+                                    <input type="number" id="budget-design-cdf" placeholder="Montant CDF" min="0" step="1000" style="margin-left: 10px; width: 100px;">
+                                </div>
+                                <div class="service-selection">
+                                    <input type="checkbox" id="service-informatique" value="informatique">
+                                    <label for="service-informatique">Informatique & Technologies</label>
+                                    <input type="number" id="budget-informatique-usd" placeholder="Montant USD" min="0" step="10" style="margin-left: 10px; width: 100px;">
+                                    <input type="number" id="budget-informatique-cdf" placeholder="Montant CDF" min="0" step="1000" style="margin-left: 10px; width: 100px;">
+                                </div>
+                                <div class="service-selection">
+                                    <input type="checkbox" id="service-web" value="web">
+                                    <label for="service-web">Web & Numérique</label>
+                                    <input type="number" id="budget-web-usd" placeholder="Montant USD" min="0" step="10" style="margin-left: 10px; width: 100px;">
+                                    <input type="number" id="budget-web-cdf" placeholder="Montant CDF" min="0" step="1000" style="margin-left: 10px; width: 100px;">
+                                </div>
+                                <div class="service-selection">
+                                    <input type="checkbox" id="service-audiovisuel" value="audiovisuel">
+                                    <label for="service-audiovisuel">Audiovisuel & Événementiel</label>
+                                    <input type="number" id="budget-audiovisuel-usd" placeholder="Montant USD" min="0" step="10" style="margin-left: 10px; width: 100px;">
+                                    <input type="number" id="budget-audiovisuel-cdf" placeholder="Montant CDF" min="0" step="1000" style="margin-left: 10px; width: 100px;">
+                                </div>
+                                <div class="service-selection">
+                                    <input type="checkbox" id="service-formation" value="formation">
+                                    <label for="service-formation">Formation & Accompagnement</label>
+                                    <input type="number" id="budget-formation-usd" placeholder="Montant USD" min="0" step="10" style="margin-left: 10px; width: 100px;">
+                                    <input type="number" id="budget-formation-cdf" placeholder="Montant CDF" min="0" step="1000" style="margin-left: 10px; width: 100px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description du projet</label>
+                            <textarea id="description" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="loyalty-id">Numéro de fidélité (si applicable)</label>
+                            <input type="text" id="loyalty-id" class="form-control">
+                            <small>Entrez votre numéro pour appliquer les réductions disponibles.</small>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Soumettre la demande</button>
+                    </form>
+                </div>
+
+                <div class="order-summary">
+                    <h3>Résumé de Commande</h3>
+                    <div class="summary">
+                        <div class="summary-item">
+                            <span>Service:</span>
+                            <span id="service-summary">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Budget estimé:</span>
+                            <span id="budget-summary">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Points gagnés:</span>
+                            <span id="points-summary">2</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total après réduction:</span>
+                            <span id="total-summary">-</span>
+                        </div>
+                    </div>
+
+                    <div class="payment-methods">
+                        <h4>Méthodes de Paiement</h4>
+                        <div class="payment-option">
+                            <input type="radio" id="orange-money" name="payment" checked>
+                            <label for="orange-money">Orange Money: +243 849 497 816</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="bank-transfer" name="payment">
+                            <label for="bank-transfer">Virement Bancaire</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="cash" name="payment">
+                            <label for="cash">Paiement en Espèces</label>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <p>Votre demande sera traitée dans les plus brefs délais. Un expert vous contactera pour finaliser les détails.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>SOFTECH</h3>
+                    <p>L'innovation à votre service. Votre partenaire de confiance pour des solutions numériques, technologiques et éducatives.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Liens Rapides</h3>
+                    <a href="#accueil">Accueil</a>
+                    <a href="#services">Services</a>
+                    <a href="#apropos">À propos</a>
+                    <a href="#fidelite">Programme de fidélité</a>
+                    <a href="#commander">Commander</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Nos Services</h3>
+                    <a href="#">Design & Communication</a>
+                    <a href="#">Informatique & Technologies</a>
+                    <a href="#">Web & Numérique</a>
+                    <a href="#">Audiovisuel & Événementiel</a>
+                    <a href="#">Formation & Accompagnement</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Kinshasa, RD Congo</p>
+                    <p><i class="fas fa-phone"></i> +243 849 497 816</p>
+                    <p><i class="fas fa-envelope"></i> contact@softéch.cd</p>
+                    <p><i class="fas fa-clock"></i> Lun - Ven: 9h00 - 18h00</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 SOFTECH. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Demande Envoyée!</h2>
+            <p id="success-message">Votre demande de service a été soumise avec succès. Notre équipe vous contactera dans les plus brefs délais.</p>
+            <button class="btn" style="margin-top: 1rem;">Fermer</button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+
+        // Service selection buttons
+        document.querySelectorAll('.select-service').forEach(button => {
+            button.addEventListener('click', function() {
+                const service = this.getAttribute('data-service');
+                document.getElementById('service-' + service).checked = true;
+                document.getElementById('commander').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Loyalty system
+        let loyaltyPoints = 0; // In real app, this would be fetched from server
+        const discountThreshold = 20;
+        const discountAmount = 5; // 5 points reduction, assuming 5% or fixed amount
+
+        // Update order summary
+        function updateSummary() {
+            let totalUSD = 0;
+            let totalCDF = 0;
+            let selectedServices = [];
+            let pointsEarned = 0;
+
+            document.querySelectorAll('#services-selection input[type="checkbox"]:checked').forEach(checkbox => {
+                const service = checkbox.value;
+                selectedServices.push(service);
+                pointsEarned += 1; // 1 point per service
+
+                const usdInput = document.getElementById('budget-' + service + '-usd');
+                const cdfInput = document.getElementById('budget-' + service + '-cdf');
+                totalUSD += parseFloat(usdInput.value) || 0;
+                totalCDF += parseFloat(cdfInput.value) || 0;
+            });
+
+            document.getElementById('service-summary').textContent = selectedServices.length > 0 ? selectedServices.join(', ') : '-';
+            document.getElementById('budget-summary').textContent = totalUSD > 0 ? '$' + totalUSD + ' / ' + totalCDF + ' CDF' : '-';
+            document.getElementById('points-summary').textContent = pointsEarned;
+            document.getElementById('total-summary').textContent = totalUSD > 0 ? '$' + totalUSD + ' / ' + totalCDF + ' CDF' : '-';
+        }
+
+        // Add event listeners to inputs
+        document.querySelectorAll('#services-selection input').forEach(input => {
+            input.addEventListener('input', updateSummary);
+            input.addEventListener('change', updateSummary);
+        });
+        document.getElementById('loyalty-id').addEventListener('input', updateSummary);
+        document.getElementById('email').addEventListener('input', updateSummary);
+
+        // Form Submission
+        document.getElementById('service-order-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Collect selected services and budgets
+            const selectedServices = [];
+            let totalUSD = 0;
+            let totalCDF = 0;
+
+            document.querySelectorAll('#services-selection input[type="checkbox"]:checked').forEach(checkbox => {
+                const service = checkbox.value;
+                selectedServices.push(service);
+                const usd = parseFloat(document.getElementById('budget-' + service + '-usd').value) || 0;
+                const cdf = parseFloat(document.getElementById('budget-' + service + '-cdf').value) || 0;
+                totalUSD += usd;
+                totalCDF += cdf;
+            });
+
+            if (selectedServices.length === 0) {
+                alert('Veuillez sélectionner au moins un service');
+                return;
+            }
+
+            // Generate PDF
+            generatePDF();
+
+            // Show success message
+            const fullname = document.getElementById('fullname').value || 'Client';
+            document.getElementById('success-message').textContent =
+                `Merci ${fullname}! Votre commande a été enregistrée. Une facture PDF a été téléchargée.`;
+
+            document.getElementById('success-modal').style.display = 'flex';
+
+            // Reset form
+            this.reset();
+            updateSummary();
+        }); // Generate PDF
+        function generatePDF() {
+            const {
+                jsPDF
+            } = window.jspdf;
+            const doc = new jsPDF();
+
+            doc.setFontSize(20);
+            doc.text('Facture SOFTECH', 20, 30);
+
+            doc.setFontSize(12);
+            doc.text('Nom: ' + document.getElementById('fullname').value, 20, 50);
+            doc.text('Email: ' + document.getElementById('email').value, 20, 60);
+            doc.text('Téléphone: ' + document.getElementById('phone').value, 20, 70);
+
+            let y = 90;
+            document.querySelectorAll('#services-selection input[type="checkbox"]:checked').forEach(checkbox => {
+                const service = checkbox.value;
+                const usd = document.getElementById('budget-' + service + '-usd').value;
+                const cdf = document.getElementById('budget-' + service + '-cdf').value;
+                doc.text('Service: ' + service + ' - USD: ' + usd + ' - CDF: ' + cdf, 20, y);
+                y += 10;
+            });
+
+            doc.text('Total: ' + document.getElementById('total-summary').textContent, 20, y + 10);
+
+            doc.save('facture.pdf');
+        }
+
+        // Close Modal
+        document.querySelector('.close-modal').addEventListener('click', function() {
+            document.getElementById('success-modal').style.display = 'none';
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if open
+                    document.querySelector('nav').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
